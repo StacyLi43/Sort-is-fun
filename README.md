@@ -20,3 +20,6 @@ void BubbleSort(int[] theArray)
   }
 }
 ```
+Visualized bubble sort by me at
+
+https://www.bilibili.com/video/BV11c411r7o6/
