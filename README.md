@@ -7,14 +7,14 @@ Bubble sort compares each two consecutive elements and puts them in the right or
 Implementing bubble sort in coding:
 (take java as an example)
 ```
-void BubbleSort
+void BubbleSort(int[] theArray)
 {
   for(int i = 1; i < n; i++){
     for (int j = 0; j < n-1; j++){
-      if(a[j] > a[j+1]){
-        int tmp = a[j];
-        a[j] = a[j+1];
-        a[j+1] = tmp;
+      if(theArray[j] > theArray[j+1]){ //swap to keep each two consecutive elements in order
+        int tmp = theArray[j];
+        theArray[j] = theArray[j+1];
+        theArray[j+1] = tmp;
       }
     }
   }
