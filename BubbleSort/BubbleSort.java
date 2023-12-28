@@ -6,7 +6,7 @@ public class BubbleSort
         Scanner input = new Scanner(System.in);
         int n = Integer.parseInt(input.nextLine());
         int[] theArray = new int[n];
-        for(int i = 1; i < n; i++)
+        for(int i = 0; i < n; i++)
             theArray[i] = input.nextInt();
         Bubblesort(theArray);
         for (int i = 0; i < n; i++)
@@ -16,9 +16,9 @@ public class BubbleSort
     }
     public static void Bubblesort(int[] theArray)
     {
-        for(int i = 1; i < n; i++)
+        for(int i = 1; i < theArray.length; i++)
         {
-            for (int j = 0; j < n-1; j++)
+            for (int j = 0; j < theArray.length-1; j++)
             {
                 if(theArray[j] > theArray[j+1])
                 {
