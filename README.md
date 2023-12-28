@@ -4,6 +4,7 @@
 **Contents**  
 - Bubble Sort  
 - Insertion Sort
+- Selection Sort
 
 ## Bubble Sort
 Bubble sort compares each two consecutive elements and puts them in the right order. After comparison, the largest element would be sorted (or say 'bubbled') to the end of the array. Consider the end part of the array as 'sorted' and repeat the comparison process to 'unsorted' part until all the elements in the array are in the correct order. 
