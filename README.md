@@ -33,7 +33,7 @@ Implementing insertion sort in coding: (in java)
 void InsertionSort(int[] theArray){
   for (int i = 1; i < n; i++){
     for (int j = i; j > 0; j--){
-      if(theArray[j] < theArray[j-1]){
+      if(theArray[j] < theArray[j-1]){ //swap to keep the head of the array 'sorted'
         int tmp = theArray[j];
         theArray[j] = theArray[j-1];
         theArray[j-1] = tmp;
@@ -44,3 +44,24 @@ void InsertionSort(int[] theArray){
 ```
 Visualized insertion sort by me at  
 https://www.bilibili.com/video/BV1tN4y1x7F9/
+
+## Selection Sort
+Selection sort selects the minimum element in 'unsorted' part of the array, and place it at the end of 'sorted' part of the array. Repeat the process until the maximum element in the array is placed at the end of the array.
+
+Implementing Selection sort in coding: (in java)
+```
+void SelectionSort(int[] theArray){
+  for(int i = 0; i < n; i++){
+    int currentmin = theArray[i];
+    int itsposition = i; //always take the first element in 'unsorted' part as the minimum and record its position
+    for(int j = i; j < n; j++)
+      if(theArray[j] < currentmin){ //find the minimum element in 'unsorted' part
+        currentmin = theArray[j];
+        itsposition = j;
+      }
+    int tmp = theArray[i];
+    theArray[i] = currentmin;
+    theArray[itsposition] = tmp;
+  }
+}
+```
