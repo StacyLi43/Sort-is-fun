@@ -38,3 +38,5 @@ void InsertionSort(int[] theArray){
   }
 }
 ```
+Visualized insertion sort by me at  
+https://www.bilibili.com/video/BV1tN4y1x7F9/
