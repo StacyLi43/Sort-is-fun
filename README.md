@@ -18,10 +18,7 @@ void BubbleSort(int[] theArray){
   }
 }
 ```
-Visualized bubble sort by me at
-
-https://www.bilibili.com/video/BV11c411r7o6/
-
+Visualized bubble sort by me at  https://www.bilibili.com/video/BV11c411r7o6/
 
 ## Insertion Sort
 Similar to bubble sort, insertion sort also compares each two consecutive elements. However, insertion sort always assumes the head of the array 'sorted'. For each new element coming from 'unsorted' part of the array, it is compared to the elements in 'sorted' part one by one and reorder simultaneously until it reaches its proper place in 'sorted' part. The process stops when the the last element in the array is in the right place and the whole array is considered 'sorted'.
